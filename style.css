@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "rubik", sans-serif;
+}
+
+body{
+    background: linear-gradient(to top, rgb(1, 0, 71), white);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    margin: 15vh;
+}
+
+#title{
+    align-self: center;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.fieldCoin{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+label{
+    font-size: 3.5vw;
+}
+
+#real{
+    padding-left: 5px;
+}
+
+.coins{
+    height: 10vw;
+    width: 80vw;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 4.5vw;
+    color: black;
+    box-sizing: border-box;
+}
+
+#arrows{
+    width: 6vw;
+    height: 6vw;
+    justify-self: center;
+    align-self: center;
+    background: url("./assets/image/arrows.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+option{
+    color: black;
+    font-size: 4.5vw;
+}
+
+#valueCoin{
+    height: 12vw;
+    width: 80vw;
+    color: white;
+    line-height: 12vw;
+    font-size: 5.5vw;
+    margin-top: 4vw;
+    box-sizing: border-box;
+}
+
+hr{
+    border-color: gray;
+}
+
+button{
+    width: 80vw;
+    height: 10vw;
+    align-self: center;
+    font-size: 4vw;
+    background-color: rgb(1, 1, 221);
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px){
+    #title{
+        font-size: 4vw;
+    }
+
+    label{
+        font-size: 2.8vw;
+    }
+    
+    .coins{
+        height: 7vw;
+        width: 60vw;
+        font-size: 3.5vw;
+    }
+
+    option{
+        font-size: 3vw;
+    }
+
+    #arrows{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #valueCoin{
+        height: 10vw;
+        width: 60vw;
+        line-height: 10vw;
+        font-size: 5vw;
+        margin-top: 3vw;
+    }
+
+    button{
+        width: 60vw;
+        height: 8vw;
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px){
+    main{
+        gap: 3.5vw;
+    }
+
+    #title{
+        font-size: 3.5vw;
+    }
+
+    label{
+        font-size: 2.4vw;
+    }
+    
+    .coins{
+        height: 6vw;
+        width: 50vw;
+        font-size: 2.5vw;
+    }
+
+    option{
+        font-size: 2.5vw;
+    }
+
+    #arrows{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    #valueCoin{
+        height: 8vw;
+        width: 50vw;
+        line-height: 8vw;
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
+
+    button{
+        width: 50vw;
+        height: 6vw;
+        font-size: 2.8vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    main{
+        justify-content: center;
+        gap: 3vw;
+    }
+
+    #title{
+        font-size: 3vw;
+    }
+
+    label{
+        font-size: 2vw;
+    }
+    
+    .coins{
+        height: 5.5vw;
+        width: 50vw;
+        font-size: 2.2vw;
+    }
+
+    option{
+        font-size: 2.3vw;
+    }
+
+    #arrows{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    #valueCoin{
+        height: 7vw;
+        width: 50vw;
+        line-height: 7vw;
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
+
+    button{
+        width: 50vw;
+        height: 5.5vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1150px){
+    main{
+        margin: 0;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    #title{
+        font-size: 2.2vw;
+    }
+
+    label{
+        font-size: 1.7vw;
+    }
+    
+    .coins{
+        height: 4vw;
+        width: 35vw;
+        font-size: 2vw;
+    }
+
+    option{
+        font-size: 1.7vw;
+    }
+
+    #arrows{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    #valueCoin{
+        height: 6vw;
+        width: 35vw;
+        line-height: 6vw;
+        font-size: 2vw;
+        margin-top: 2vw;
+    }
+
+    button{
+        width: 35vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    main{
+        margin: 0;
+        justify-content: center;
+        gap: 1vw;
+    }
+
+    #title{
+        font-size: 1.8vw;
+    }
+
+    label{
+        font-size: 1.2vw;
+    }
+    
+    .coins{
+        height: 3vw;
+        width: 30vw;
+        font-size: 1.5vw;
+    }
+
+    option{
+        font-size: 1.5vw;
+    }
+
+    #arrows{
+        width: 2vw;
+        height: 2vw;
+    }
+
+    #valueCoin{
+        height: 4vw;
+        width: 30vw;
+        line-height: 4vw;
+        font-size: 1.5vw;
+        margin-top: 1.5vw;
+    }
+
+    button{
+        width: 30vw;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+}
